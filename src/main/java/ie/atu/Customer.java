@@ -40,9 +40,7 @@ public class Customer extends Person
     @Override
     public String toString() {
         return "Customer{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", teleNumber='" + teleNumber + '\'' +
+                super.toString() +
                 " cusNumber='" + cusNumber + '\'' +
                 ", mailingList=" + mailingList +
                 '}';
