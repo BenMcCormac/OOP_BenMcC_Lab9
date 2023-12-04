@@ -7,6 +7,7 @@ public class Main {
         Person myPerson = new Person("Ben", "Headford", "085181455");
         System.out.println(myPerson.toString());
 
-        Customer myCust = new Customer();
+        Customer myCust = new Customer("Ben", "Headford", "085181455", "#54319874", true);
+        System.out.println(myCust.toString());
     }
 }

@@ -16,9 +16,7 @@ public class Customer extends Person
 
     public Customer(String name, String address, String teleNumber, String cusNumber, boolean mailingList)
     {
-        this.address = address;
-        this.name = name;
-        this.teleNumber = teleNumber;
+        super(name, address, teleNumber);
         this.cusNumber = cusNumber;
         this.mailingList = mailingList;
     }
@@ -42,10 +40,8 @@ public class Customer extends Person
     @Override
     public String toString() {
         return "Customer{" +
-                "name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", teleNumber='" + teleNumber + '\'' +
-                "cusNumber='" + cusNumber + '\'' +
+                super.toString() +
+                " cusNumber='" + cusNumber + '\'' +
                 ", mailingList=" + mailingList +
                 '}';
     }
