@@ -54,7 +54,6 @@ public class Person
     public String toString() {
         return "name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                ", teleNumber='" + teleNumber + '\'' +
-                '}';
+                ", teleNumber='" + teleNumber + '\'';
     }
 }
